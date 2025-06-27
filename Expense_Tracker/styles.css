@@ -1,0 +1,161 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f5f7fa;
+    color: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Container */
+.container {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+    width: 100%;
+    max-width: 420px;
+}
+
+/* Heading */
+h1 {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: #007bff;
+}
+
+/* Labels */
+label {
+    font-size: 0.95rem;
+    margin-top: 1rem;
+    display: block;
+    color: #333;
+}
+
+/* Inputs */
+input[type="text"],
+input[type="number"] {
+    width: 100%;
+    padding: 0.6rem;
+    margin-top: 0.4rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    background-color: #f9f9f9;
+    transition: border-color 0.2s ease;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+/* Add button */
+button {
+    width: 100%;
+    padding: 0.75rem;
+    margin-top: 1.5rem;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 1rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+button:hover {
+    background-color: #005fc2;
+}
+
+/* List */
+ul {
+    list-style: none;
+    margin-top: 2rem;
+    padding: 0;
+}
+
+/* List items */
+li {
+    background-color: #f9fbfd;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 0.75rem 1rem;
+    margin-bottom: 0.75rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Expense info */
+.expense-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.expense-details strong {
+    font-size: 1rem;
+    color: #333;
+}
+
+.expense-details small {
+    font-size: 0.75rem;
+    color: #666;
+    margin-top: 0.2rem;
+}
+
+/* Delete button */
+.delete-btn {
+    background-color: transparent;
+    color: #d11a2a;
+    border: 1px solid transparent;
+    padding: 5px 10px;
+    font-size: 0.85rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s;
+    width: auto;
+    margin-top: 0;
+}
+
+.delete-btn:hover {
+    background-color: #ffecec;
+    border: 1px solid #ffaaaa;
+}
+
+/* Total */
+#total-display {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 1.5rem;
+    color: #007bff;
+    padding: 1rem;
+    background-color: #f0f8ff;
+    border-radius: 8px;
+    border: 2px solid #e0f2ff;
+}
+
+/* Empty state */
+.empty-state {
+    text-align: center;
+    color: #666;
+    font-style: italic;
+    padding: 2rem;
+}
